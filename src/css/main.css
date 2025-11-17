@@ -13,8 +13,15 @@ video {
   display: block;
 }
 
-
 body {
   background: black;
   color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #002ca3;
+  max-height: 130px;
+  padding: 22px 40px;
 }
