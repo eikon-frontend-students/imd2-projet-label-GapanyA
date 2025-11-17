@@ -4,28 +4,15 @@
   padding: 0;
   font-family: "Encode Sans Semi Condensed";
 }
-
-a {
-  color: inherit;
-}
-
-img,
-video {
-  display: block;
-}
-
-body {
-  background: black;
-  color: white;
-}
-
 .header {
   display: flex;
   flex-direction: row;
+  width: 100vw;
   background-color: #002ca3;
   max-height: 130px;
   padding: 22px 40px;
   justify-content: space-between;
+  color: white;
 }
 .logo-header {
   max-width: 76px;
@@ -40,18 +27,54 @@ body {
   flex-direction: row;
   list-style: none;
   gap: 35px;
-  padding-right: 40px;
+  padding-right: 140px;
   font-size: 38px;
 }
-
+.bugermenu {
+  display: none;
+}
 button {
   background-color: #002ca3;
   color: white;
-  padding: 2px 25px 4px 25px;
   border-style: solid;
   border-width: 1px;
   border-color: white;
+}
+button:hover {
+  background-color: white;
+  color: #002ca3;
+}
+.login {
   border-radius: 67px;
+  padding: 2px 25px 4px 25px;
   font-size: 16px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 860px) {
+  .nav-content {
+    display: none;
+  }
+  .bugermenu {
+    display: inline;
+    width: 8vw;
+  }
+  .header {
+    width: 100vw;
+    max-height: 20vw;
+    padding: 10vw 10vw;
+    align-items: center;
+  }
+  .logo-header {
+    max-width: 12vw;
+  }
+  .login {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .bugermenu {
+    display: block;
+  }
 }
