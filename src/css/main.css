@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Encode Sans Semi Condensed";
 }
 
 a {
@@ -24,4 +25,33 @@ body {
   background-color: #002ca3;
   max-height: 130px;
   padding: 22px 40px;
+  justify-content: space-between;
+}
+.logo-header {
+  max-width: 76px;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 35px;
+  padding-right: 40px;
+  font-size: 38px;
+}
+
+button {
+  background-color: #002ca3;
+  color: white;
+  padding: 2px 25px 4px 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 67px;
+  font-size: 16px;
+  font-weight: 300;
 }
