@@ -13,27 +13,94 @@
   padding: 22px 40px;
   justify-content: space-between;
   color: white;
+
+  .logo-header {
+    max-width: 76px;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  .nav-content {
+    display: none;
+  }
+  .bugermenu {
+    display: inline;
+    width: 8vw;
+    align-items: center;
+  }
+  .login {
+    border-radius: 67px;
+    padding: 2px 25px 4px 25px;
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
-.logo-header {
-  max-width: 76px;
+.Banner-Title {
+  width: 100vw;
+  height: 842px;
+  background-image: url(/src/images/imgs/banner.jpg);
+  background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.header-content {
+.footer {
   display: flex;
   flex-direction: column;
-  align-items: end;
-}
-.nav-content {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 35px;
-  padding-right: 140px;
-  font-size: 38px;
-}
-.bugermenu {
-  display: none;
+  width: 100vw;
+  background-color: #002ca3;
+  padding: 40px 40px 20px 40px;
+  color: white;
+  gap: 40px;
+
+  p {
+    align-self: center;
+  }
+  .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Information {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  .CraftsRec-logo {
+    width: clamp(40px, 16vw, 80px);
+  }
+  .Legal-Informations {
+    line-height: clamp(12px, 4vw, 60px);
+    list-style: none;
+    font-size: clamp(8px, 2.5vw, 40px);
+    text-align: center;
+  }
+  .policies:hover {
+    text-decoration: underline 3px;
+  }
+  .Contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .Social-Media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .media-logos {
+    max-width: 6vw;
+  }
+  .footer-bluesville-logo {
+    max-width: 100px;
+  }
 }
 button {
+  display: none;
   background-color: #002ca3;
   color: white;
   border-style: solid;
@@ -44,37 +111,90 @@ button:hover {
   background-color: white;
   color: #002ca3;
 }
-.login {
-  border-radius: 67px;
-  padding: 2px 25px 4px 25px;
-  font-size: 16px;
-  font-weight: 300;
-}
 
-@media screen and (max-width: 860px) {
-  .nav-content {
-    display: none;
-  }
-  .bugermenu {
-    display: inline;
-    width: 8vw;
-  }
+@media screen and (min-width: 768px) {
   .header {
-    width: 100vw;
-    max-height: 20vw;
-    padding: 10vw 10vw;
-    align-items: center;
+    .bugermenu {
+      width: 6vw;
+    }
   }
-  .logo-header {
-    max-width: 12vw;
-  }
-  .login {
-    display: none;
+  .footer {
+    padding: 30px 40px 20px 40px;
+    gap: 20px;
+    .Legal-Informations {
+      columns: 2;
+      column-gap: 0vw;
+      line-height: clamp(12px, 4vw, 60px);
+      font-size: clamp(10px, 2.5vw, 40px);
+      text-align: start;
+    }
+    .media-logos {
+      max-width: 5vw;
+    }
+    .footer-bluesville-logo {
+      width: 13vw;
+      max-width: 138px;
+    }
   }
 }
 
-@media screen and (min-width: 861px) {
-  .bugermenu {
-    display: block;
+@media screen and (min-width: 1024px) {
+  .header {
+    max-height: 130px;
+    padding: 22px 40px;
+
+    .logo-header {
+      max-width: 76px;
+    }
+    .nav-content {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 35px;
+      padding-right: 140px;
+      font-size: clamp(20px, 3vw, 45px);
+    }
+    .bugermenu {
+      display: none;
+    }
+    button {
+      display: block;
+    }
+    .login {
+      font-size: 1vw;
+    }
+  }
+  .footer {
+    padding: 20px 40px;
+    .footer-main {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .Information {
+      flex-direction: row;
+      gap: 5vw;
+      align-items: center;
+      margin-right: 10vw;
+    }
+    .CraftsRec-logo {
+      width: 8vw;
+      max-width: 129px;
+    }
+    .Contact {
+      flex-direction: row;
+      align-items: center;
+    }
+    .Social-Media {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .media-logos {
+      width: 4vw;
+      max-width: 55px;
+    }
+    .footer-bluesville-logo {
+      width: 10vw;
+      max-width: 186px;
+    }
   }
 }
