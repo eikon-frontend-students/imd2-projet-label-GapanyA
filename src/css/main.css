@@ -57,6 +57,52 @@
     padding-top: clamp(90px, 28vw, 500px);
   }
 }
+h2 {
+  font-family: "Fugaz One";
+  font-size: 3.6vw;
+  font-weight: 100;
+}
+a {
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.News-section {
+  display: flex;
+  flex-direction: row;
+  padding: 5vw 7vw 15vw 7vw;
+  color: #002ca3;
+  gap: 8vw;
+  align-items: center;
+
+  .album-cover {
+    width: 40vw;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .album-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .album-artist {
+    font-size: 1.7vw;
+  }
+  .album-title {
+    font-size: 2.3vw;
+    font-weight: 600;
+  }
+  .link {
+    padding-top: 1vw;
+  }
+  .chevron-right {
+    width: 1vw;
+  }
+}
 
 .footer {
   display: flex;
