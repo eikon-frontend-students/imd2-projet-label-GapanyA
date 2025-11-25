@@ -57,8 +57,7 @@
     padding-top: clamp(90px, 28vw, 500px);
   }
 }
-
-.footer {
+.n .footer {
   display: flex;
   flex-direction: column;
   width: 100vw;
