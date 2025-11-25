@@ -40,12 +40,24 @@
 }
 .Banner-Title {
   width: 100vw;
-  height: 842px;
-  background-image: url(/src/images/imgs/banner.jpg);
+  max-height: 842px;
+  padding: 0px 20px;
+  background-image: url(/src/images/imgs/banner.png);
   background-size: 100vw;
-  background-position: center;
   background-repeat: no-repeat;
+  text-align: end;
+  justify-content: flex-end;
+
+  h1 {
+    font-family: "Fugaz One";
+    font-size: 10vw;
+    color: white;
+    text-shadow: 1px 0px 0px #002ca3, -1px 0px 0px #002ca3, 0px 1px 0px #002ca3,
+      0px -1px 0px #002ca3;
+    padding-top: clamp(90px, 28vw, 500px);
+  }
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -118,6 +130,14 @@ button:hover {
       width: 6vw;
     }
   }
+  .Banner-Title {
+    padding: 0px 30px;
+    h1 {
+      font-size: clamp(10px, 9vw, 80px);
+      padding-top: clamp(240px, 30vw, 700px);
+      padding-left: 100px;
+    }
+  }
   .footer {
     padding: 30px 40px 20px 40px;
     gap: 20px;
@@ -162,6 +182,14 @@ button:hover {
     }
     .login {
       font-size: 1vw;
+    }
+  }
+  .Banner-Title {
+    padding: 0px 40px;
+    h1 {
+      font-size: 80px;
+      padding-top: clamp(50px, 47vw, 700px);
+      padding-left: 40px;
     }
   }
   .footer {
