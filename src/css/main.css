@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "Encode Sans Semi Condensed";
 }
+body {
+  background-color: blueviolet;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -73,8 +76,13 @@ a {
   flex-direction: row;
   padding: 5vw 7vw 15vw 7vw;
   color: #002ca3;
+  background-color: white;
   gap: 8vw;
   align-items: center;
+  background-image: url(/src/images/imgs/background-1.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: 0px 51vw;
 
   .album-cover {
     width: 40vw;
@@ -103,7 +111,53 @@ a {
     width: 1vw;
   }
 }
+.Playlist-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 2vw 15vw;
+  gap: 4vw;
+  text-align: end;
+  color: white;
+  background-image: url(/src/images/imgs/background-1.png);
+  background-position: 0px -9vw;
+  background-size: 100vw;
+  background-repeat: no-repeat;
 
+  .playlists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .playlist {
+    width: 31vw;
+  }
+  .playlist-small {
+    width: 23vw;
+  }
+  .next {
+    display: block;
+    padding: 2vw 2.5vw;
+    border-radius: 67px;
+    height: 20vw;
+
+    .chevron-white {
+      width: 1.2vw;
+    }
+    .chevron-blue {
+      display: none;
+    }
+  }
+  .next:hover {
+    .chevron-white {
+      display: none;
+    }
+    .chevron-blue {
+      display: block;
+      width: 1.2vw;
+    }
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -184,6 +238,49 @@ button:hover {
       padding-left: 100px;
     }
   }
+  .Playlist-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 240px;
+    gap: 75px;
+    text-align: end;
+    color: white;
+    background-image: url(/src/images/imgs/background-1.png);
+    background-position: 0px -9vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+
+    .playlists {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .playlist {
+      width: 31vw;
+    }
+    .playlist-small {
+      width: 23vw;
+    }
+    .next {
+      display: block;
+      padding: 2vw 2.5vw;
+      border-radius: 67px;
+      height: 20vw;
+      .chevron-blue {
+        display: none;
+      }
+    }
+    .next:hover {
+      .chevron-white {
+        display: none;
+      }
+      .chevron-blue {
+        display: block;
+        width: 1.2vw;
+      }
+    }
+  }
   .footer {
     padding: 30px 40px 20px 40px;
     gap: 20px;
@@ -236,6 +333,49 @@ button:hover {
       font-size: 80px;
       padding-top: clamp(50px, 47vw, 700px);
       padding-left: 40px;
+    }
+  }
+  .Playlist-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 240px;
+    gap: 75px;
+    text-align: end;
+    color: white;
+    background-image: url(/src/images/imgs/background-1.png);
+    background-position: 0px -9vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+
+    .playlists {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .playlist {
+      width: 31vw;
+    }
+    .playlist-small {
+      width: 23vw;
+    }
+    .next {
+      display: block;
+      padding: 2vw 2.5vw;
+      border-radius: 67px;
+      height: 20vw;
+      .chevron-blue {
+        display: none;
+      }
+    }
+    .next:hover {
+      .chevron-white {
+        display: none;
+      }
+      .chevron-blue {
+        display: block;
+        width: 1.2vw;
+      }
     }
   }
   .footer {
