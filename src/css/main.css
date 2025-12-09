@@ -29,6 +29,11 @@ body {
   .nav-content {
     display: none;
   }
+  a {
+    font-weight: 400;
+    align-self: center;
+    font-size: 3vw;
+  }
   .bugermenu {
     display: inline;
     width: 8vw;
@@ -212,34 +217,64 @@ p {
 }
 .Shop-section {
   display: flex;
-  flex-direction: row;
-  padding: 120px 96px 53px;
+  flex-direction: column;
+  padding: 3vw 7vw 2vw;
+  background-image: url(/src/images/imgs/background-2.png);
+  background-position: 0px -9vw;
+  color: white;
+  gap: 2vw;
 
+  .chevron-right {
+    width: 1vw;
+  }
   .carousel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .shop-albums {
+    position: relative;
+    height: 31vw;
     display: flex;
     flex-direction: row;
   }
   .album-cover {
     width: 31vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* transform: translateX(-50%); */
   }
-  .back {
-    height: 29vw;
+  .album-cover.front {
+    z-index: 1;
   }
+
+  .album-cover.prev {
+    left: 40%;
+  }
+
+  .album-cover.next {
+    left: 60%;
+  }
+
   .shop-indicators {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.4vw;
+    padding-left: 54vw;
+    padding-top: 2.5vw;
   }
   .indicator {
     display: flex;
-    color: black;
+    background-color: black;
     border-radius: 100%;
-    border: #0043fc;
+    border-color: #002ca3;
+    border-width: 0.3vw;
     width: 3vw;
     height: 3vw;
+  }
+  .clicked {
+    background-color: #002ca3;
+    border-color: black;
   }
 }
 .About-section {
@@ -248,10 +283,12 @@ p {
   gap: 5vw;
   padding: 7vw 3vw 3vw 3vw;
   background-color: white;
-  background-image: url(/dist/img/background-2.35624fb3.png);
+  background-image: url(/src/images/imgs/background-2.png);
   background-repeat: no-repeat;
   background-size: 100vw;
-  background-position: 0px -48vw;
+  background-position: 0px -47vw;
+  background-size: 100vw;
+  background-repeat: no-repeat;
   color: #002ca3;
 
   .about-texts {
@@ -336,18 +373,57 @@ button:hover {
 .Biography-section {
   display: flex;
   flex-direction: row;
-  padding: 130px 60px 150px 60px;
-  gap: 20vw;
-
+  align-items: end;
+  justify-content: center;
+  padding: 9vw 8vw 16vw 4vw;
+  gap: 2vw;
   background-color: white;
-  background-image: url(/dist/img/);
-  background-position: 0px 10vw;
-  color: #002ca3 h3 {
-    font-size: 6vw;
+  background-image: url(/src/images/imgs/background-3.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: 0px 45vw;
+  color: #002ca3;
+
+  h3 {
+    font-size: 8vw;
   }
   p {
-    width: 41vw;
+    width: 31vw;
     color: #002ca3;
+  }
+}
+
+.Discography-section {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 100vw;
+  padding: 4vw 4vw 0px 4vw;
+  background-image: url(/src/images/imgs/background-3.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: 0px -17vw;
+  color: white;
+  gap: 5vw;
+
+  .albums-grid {
+    width: 28vw;
+  }
+  .link {
+    align-self: center;
+    color: white;
+    font-weight: 600;
+  }
+  .grid {
+    display: grid;
+    row-gap: 2vw;
+    grid-template-areas:
+      "1" "2" "3"
+      "4" "5" "6"
+      "7" "8" "link";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
   }
 }
 
@@ -365,7 +441,18 @@ button:hover {
       padding-left: 100px;
     }
   }
+  .Biography-section {
+    padding: 9vw 7vw 17vw 4vw;
+    gap: 10vw;
+    background-position: 0px 42vw;
 
+    h3 {
+      font-size: 7vw;
+    }
+    p {
+      width: 36vw;
+    }
+  }
   .footer {
     padding: 30px 40px 20px 40px;
     gap: 20px;
@@ -418,6 +505,28 @@ button:hover {
       font-size: 80px;
       padding-top: clamp(50px, 47vw, 700px);
       padding-left: 40px;
+    }
+  }
+  .Biography-section {
+    padding: 9vw 7vw 17vw 4vw;
+    gap: 20vw;
+    background-position: 0px 40vw;
+
+    h3 {
+      font-size: 6vw;
+    }
+    p {
+      width: 41vw;
+    }
+  }
+  .Discography-section {
+    .grid {
+      grid-template-areas:
+        "albums-grid1" "albums-grid2" "albums-grid3"
+        "albums-grid4" "albums-grid5" "albums-grid6"
+        "albums-grid7" "albums-grid8" "link";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
     }
   }
   .footer {
