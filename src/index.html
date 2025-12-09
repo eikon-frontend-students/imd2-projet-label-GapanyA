@@ -18,12 +18,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
+  <main>
   <body>
     <include src="components/header.html"></include>
-    <div class="Banner-Title">
+    <section class="Banner-Title">
       <h1 class="title">Welcome to Bluesville</h1>
-    </div>
-    <div class="News-section" id="News">
+    </section>
+    <section class="News-section" id="News">
       <div class="texts">
         <h2 class="section-title">Latest release</h2>
         <div class="album-info">
@@ -39,8 +40,8 @@
         /></a>
       </div>
       <img class="album-cover" src="images/imgs/new-album-card.png" />
-    </div>
-    <div class="Playlist-section" id="Music">
+    </section>
+    <section class="Playlist-section" id="Music">
       <h2 class="section-title">Our playlists</h2>
       <div class="playlists">
         <a href="./artistpage.html"
@@ -60,8 +61,8 @@
           <img class="chevron-blue" src="images/svgs/chevron-right.svg" />
         </button>
       </div>
-    </div>
-    <div class="Artist-section" id="Artists">
+    </section>
+    <section class="Artist-section" id="Artists">
       <h2 class="section-title">Our artists</h2>
       <div class="artist-cards">
         <div class="artist-card CharlesBrown">
@@ -99,8 +100,57 @@
         >See all artists
         <img class="chevron-right" src="images/svgs/chevron-right.svg"
       /></a>
-    </div>
+    </section>
+    <section class="Shop-section" id="Merch">
+      <div class="shop-texts">
+        <h2 class="section-title">Our shop and recent releases</h2>
+        <a class="link" href="./artistpage.html"
+          >Shop more
+          <img class="chevron-right" src="images/svgs/chevron-right.svg"
+        /></a>
+      </div>
+      <div class="carousel">
+        <div class="shop-albums">
+          <img class="album-cover" src="images/imgs/shop-album1.png" />
+          <img class="album-cover back" src="images/imgs/shop-album2.png" />
+          <img class="album-cover back" src="images/imgs/shop-album3.png" />
+        </div>
+        <div class="shop-indicators">
+          <button class="indicator"></button>
+          <button class="indicator clicked"></button>
+          <button class="indicator"></button>
+        </div>
+      </div>
+    </section>
+    <section class="About-section" id="About-Us">
+      <div>
+        <h2 class="section-title">About us</h2>
+        <div class="about-texts">
+          <p>
+            This new iteration of Bluesville pays homage to the original
+            Bluesville imprint launched by Prestige Records. The original
+            imprint was created to preserve the blues genre and highlight its
+            key living figures. Now, Bluesville Records seeks to elevate the
+            legacies of the artists behind the albums and honor their
+            immeasurable impact on modern music.
+          </p>
+          <p>
+            As part of Craft Recordings, Bluesville Records sources its
+            selections from the celebrated catalog of iconic labels such as
+            these.
+          </p>
+        </div>
+      </div>
+      <div class="loogos-labels">
+        <img class="logos" src="images/svgs/VEEJAYlogoblack.svg" />
+        <img class="logos" src="images/svgs/vanguardrecords.svg" />
+        <img class="logos" src="images/svgs/stax-logo.svg" />
+        <img class="logos" src="images/svgs/Prestige-Records.svg" />
+        <img class="logos" src="images/svgs/Riverside.svg" />
+        <img class="logos" src="images/svgs/SPECIALTY-logo.svg" />
+      </div>
+    </section>
     <include src="components/footer.html"></include>
     <script src="js/main.js" type="module"></script>
-  </body>
+  </main></body>
 </html>

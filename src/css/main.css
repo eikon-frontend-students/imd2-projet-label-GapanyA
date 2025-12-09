@@ -76,6 +76,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+p {
+  font-size: 1.5vw;
+  width: 65vw;
+}
 .News-section {
   display: flex;
   flex-direction: row;
@@ -96,6 +100,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1vw;
+    width: 35vw;
   }
   .album-info {
     display: flex;
@@ -165,6 +170,13 @@ a {
     }
   }
 }
+.artist-image {
+  width: 25vw;
+  border: 1.2vw solid black;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 0.2vw #002ca3, 0px 0px 0px 0.7vw black,
+    0px 0px 0px 1vw #0043fc, 0px 0px 0px 2.3vw black;
+}
 .Artist-section {
   display: flex;
   flex-direction: column;
@@ -183,13 +195,7 @@ a {
     flex-direction: column;
     gap: 2vw;
   }
-  .artist-image {
-    width: 25vw;
-    border: 1.2vw solid black;
-    border-radius: 100%;
-    box-shadow: 0px 0px 0px 0.2vw #002ca3, 0px 0px 0px 0.7vw black,
-      0px 0px 0px 1vw #0043fc, 0px 0px 0px 2.3vw black;
-  }
+
   .artist-card {
     display: flex;
     flex-direction: row;
@@ -202,6 +208,63 @@ a {
   .artist-info {
     display: flex;
     flex-direction: column;
+  }
+}
+.Shop-section {
+  display: flex;
+  flex-direction: row;
+  padding: 120px 96px 53px;
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+  }
+  .shop-albums {
+    display: flex;
+    flex-direction: row;
+  }
+  .album-cover {
+    width: 31vw;
+  }
+  .back {
+    height: 29vw;
+  }
+  .shop-indicators {
+    display: flex;
+    flex-direction: column;
+  }
+  .indicator {
+    display: flex;
+    color: black;
+    border-radius: 100%;
+    border: #0043fc;
+    width: 3vw;
+    height: 3vw;
+  }
+}
+.About-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 7vw 3vw 3vw 3vw;
+  background-color: white;
+  background-image: url(/dist/img/background-2.35624fb3.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: 0px -48vw;
+  color: #002ca3;
+
+  .about-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .loogos-labels {
+    display: flex;
+    gap: 1vw;
+  }
+  .logos {
+    width: 15vw;
   }
 }
 .footer {
@@ -268,6 +331,24 @@ button {
 button:hover {
   background-color: white;
   color: #002ca3;
+}
+
+.Biography-section {
+  display: flex;
+  flex-direction: row;
+  padding: 130px 60px 150px 60px;
+  gap: 20vw;
+
+  background-color: white;
+  background-image: url(/dist/img/);
+  background-position: 0px 10vw;
+  color: #002ca3 h3 {
+    font-size: 6vw;
+  }
+  p {
+    width: 41vw;
+    color: #002ca3;
+  }
 }
 
 @media screen and (min-width: 768px) {
