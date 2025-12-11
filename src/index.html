@@ -18,139 +18,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <main>
+
   <body>
     <include src="components/header.html"></include>
-    <section class="Banner-Title">
-      <h1 class="title">Welcome to Bluesville</h1>
-    </section>
-    <section class="News-section" id="News">
-      <div class="texts">
-        <h2 class="section-title">Latest release</h2>
-        <div class="album-info">
-          <p class="album-artist">Pink Anderson & Terry Callier</p>
-          <h4 class="album-title">
-            Vol. 1: Carolina Blues Man (180g) + The New Folk Sound Of Terry
-            Callier (180g LP) (Bluesville Series)
-          </h4>
+    <main>
+      <section class="Banner-Title">
+        <h1 class="title">Welcome to Bluesville</h1>
+      </section>
+      <section class="News-section" id="News">
+        <div class="texts">
+          <h2 class="section-title">Latest release</h2>
+          <div class="album-info">
+            <p class="album-artist">Pink Anderson & Terry Callier</p>
+            <h4 class="album-title">
+              Vol. 1: Carolina Blues Man (180g) + The New Folk Sound Of Terry
+              Callier (180g LP) (Bluesville Series)
+            </h4>
+          </div>
+          <a class="link" href="./artistpage.html"
+            >Learn more
+            <img class="chevron-right" src="images/svgs/chevron-right.svg"
+          /></a>
+        </div>
+        <img class="album-cover" src="images/imgs/new-album-card.png" />
+      </section>
+      <section class="Playlist-section" id="Music">
+        <h2 class="section-title">Our playlists</h2>
+        <div class="playlists">
+          <a href="./artistpage.html"
+            ><img class="playlist" src="images/imgs/playlist-1.png"
+          /></a>
+          <a href="./artistpage.html"
+            ><img class="playlist" src="images/imgs/playlist-2.png"
+          /></a>
+          <a href="./artistpage.html"
+            ><img class="playlist-small" src="images/imgs/playlist-3.png"
+          /></a>
+          <button class="next">
+            <img
+              class="chevron-white"
+              src="images/svgs/chevron-right-white.svg"
+            />
+            <img class="chevron-blue" src="images/svgs/chevron-right.svg" />
+          </button>
+        </div>
+      </section>
+      <section class="Artist-section" id="Artists">
+        <h2 class="section-title">Our artists</h2>
+        <div class="artist-cards">
+          <div class="artist-card CharlesBrown">
+            <img class="artist-image" src="images/imgs/CharlesBrown.png" />
+            <div class="artist-info">
+              <h3 class="artist-name">Charles Brown</h3>
+              <a class="link" href="./artistpage.html"
+                >Learn more
+                <img
+                  class="chevron-right"
+                  src="images/svgs/chevron-right.svg"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="artist-card TracyNelson">
+            <div class="artist-info">
+              <h3 class="artist-name">Tracy Nelson</h3>
+              <a class="link" href="./artistpage.html"
+                >Learn more
+                <img
+                  class="chevron-right"
+                  src="images/svgs/chevron-right.svg"
+                />
+              </a>
+            </div>
+            <img class="artist-image" src="images/imgs/TracyNelson.png" />
+          </div>
+          <div class="artist-card BobbyRush">
+            <img class="artist-image" src="images/imgs/BobbyRush.png" />
+            <div class="artist-info">
+              <h3 class="artist-name">Bobby Rush</h3>
+              <a class="link" href="./artistpage.html"
+                >Learn more
+                <img
+                  class="chevron-right"
+                  src="images/svgs/chevron-right.svg"
+                />
+              </a>
+            </div>
+          </div>
         </div>
         <a class="link" href="./artistpage.html"
-          >Learn more
+          >See all artists
           <img class="chevron-right" src="images/svgs/chevron-right.svg"
         /></a>
-      </div>
-      <img class="album-cover" src="images/imgs/new-album-card.png" />
-    </section>
-    <section class="Playlist-section" id="Music">
-      <h2 class="section-title">Our playlists</h2>
-      <div class="playlists">
-        <a href="./artistpage.html"
-          ><img class="playlist" src="images/imgs/playlist-1.png"
-        /></a>
-        <a href="./artistpage.html"
-          ><img class="playlist" src="images/imgs/playlist-2.png"
-        /></a>
-        <a href="./artistpage.html"
-          ><img class="playlist-small" src="images/imgs/playlist-3.png"
-        /></a>
-        <button class="next">
-          <img
-            class="chevron-white"
-            src="images/svgs/chevron-right-white.svg"
-          />
-          <img class="chevron-blue" src="images/svgs/chevron-right.svg" />
-        </button>
-      </div>
-    </section>
-    <section class="Artist-section" id="Artists">
-      <h2 class="section-title">Our artists</h2>
-      <div class="artist-cards">
-        <div class="artist-card CharlesBrown">
-          <img class="artist-image" src="images/imgs/CharlesBrown.png" />
-          <div class="artist-info">
-            <h3 class="artist-name">Charles Brown</h3>
-            <a class="link" href="./artistpage.html"
-              >Learn more
-              <img class="chevron-right" src="images/svgs/chevron-right.svg" />
-            </a>
+      </section>
+      <section class="Shop-section" id="Merch">
+        <div class="shop-texts">
+          <h2 class="section-title">Our shop and recent releases</h2>
+          <a class="link" href="./artistpage.html"
+            >Shop more
+            <img
+              class="chevron-right"
+              src="images/svgs/chevron-right-white.svg"
+          /></a>
+        </div>
+        <div class="carousel">
+          <div class="shop-albums">
+            <img class="album-cover front" src="images/imgs/shop-album1.png" />
+            <img class="album-cover prev" src="images/imgs/shop-album2.png" />
+            <img class="album-cover next" src="images/imgs/shop-album3.png" />
+          </div>
+          <div class="shop-indicators">
+            <button class="indicator"></button>
+            <button class="indicator clicked"></button>
+            <button class="indicator"></button>
           </div>
         </div>
-        <div class="artist-card TracyNelson">
-          <div class="artist-info">
-            <h3 class="artist-name">Tracy Nelson</h3>
-            <a class="link" href="./artistpage.html"
-              >Learn more
-              <img class="chevron-right" src="images/svgs/chevron-right.svg" />
-            </a>
+      </section>
+      <section class="About-section" id="Aboutus">
+        <div>
+          <h2 class="section-title">About us</h2>
+          <div class="about-texts">
+            <p>
+              This new iteration of Bluesville pays homage to the original
+              Bluesville imprint launched by Prestige Records. The original
+              imprint was created to preserve the blues genre and highlight its
+              key living figures. Now, Bluesville Records seeks to elevate the
+              legacies of the artists behind the albums and honor their
+              immeasurable impact on modern music.
+            </p>
+            <p>
+              As part of Craft Recordings, Bluesville Records sources its
+              selections from the celebrated catalog of iconic labels such as
+              these.
+            </p>
           </div>
-          <img class="artist-image" src="images/imgs/TracyNelson.png" />
         </div>
-        <div class="artist-card BobbyRush">
-          <img class="artist-image" src="images/imgs/BobbyRush.png" />
-          <div class="artist-info">
-            <h3 class="artist-name">Bobby Rush</h3>
-            <a class="link" href="./artistpage.html"
-              >Learn more
-              <img class="chevron-right" src="images/svgs/chevron-right.svg" />
-            </a>
-          </div>
+        <div class="loogos-labels">
+          <img class="logos" src="images/svgs/VEEJAYlogoblack.svg" />
+          <img class="logos" src="images/svgs/vanguardrecords.svg" />
+          <img class="logos" src="images/svgs/stax-logo.svg" />
+          <img class="logos" src="images/svgs/Prestige-Records.svg" />
+          <img class="logos" src="images/svgs/Riverside.svg" />
+          <img class="logos" src="images/svgs/SPECIALTY-logo.svg" />
         </div>
-      </div>
-      <a class="link" href="./artistpage.html"
-        >See all artists
-        <img class="chevron-right" src="images/svgs/chevron-right.svg"
-      /></a>
-    </section>
-    <section class="Shop-section" id="Merch">
-      <div class="shop-texts">
-        <h2 class="section-title">Our shop and recent releases</h2>
-        <a class="link" href="./artistpage.html"
-          >Shop more
-          <img class="chevron-right" src="images/svgs/chevron-right-white.svg"
-        /></a>
-      </div>
-      <div class="carousel">
-        <div class="shop-albums">
-          <img class="album-cover front" src="images/imgs/shop-album1.png" />
-          <img class="album-cover prev" src="images/imgs/shop-album2.png" />
-          <img class="album-cover next" src="images/imgs/shop-album3.png" />
-        </div>
-        <div class="shop-indicators">
-          <button class="indicator"></button>
-          <button class="indicator clicked"></button>
-          <button class="indicator"></button>
-        </div>
-      </div>
-    </section>
-    <section class="About-section" id="Aboutus">
-      <div>
-        <h2 class="section-title">About us</h2>
-        <div class="about-texts">
-          <p>
-            This new iteration of Bluesville pays homage to the original
-            Bluesville imprint launched by Prestige Records. The original
-            imprint was created to preserve the blues genre and highlight its
-            key living figures. Now, Bluesville Records seeks to elevate the
-            legacies of the artists behind the albums and honor their
-            immeasurable impact on modern music.
-          </p>
-          <p>
-            As part of Craft Recordings, Bluesville Records sources its
-            selections from the celebrated catalog of iconic labels such as
-            these.
-          </p>
-        </div>
-      </div>
-      <div class="loogos-labels">
-        <img class="logos" src="images/svgs/VEEJAYlogoblack.svg" />
-        <img class="logos" src="images/svgs/vanguardrecords.svg" />
-        <img class="logos" src="images/svgs/stax-logo.svg" />
-        <img class="logos" src="images/svgs/Prestige-Records.svg" />
-        <img class="logos" src="images/svgs/Riverside.svg" />
-        <img class="logos" src="images/svgs/SPECIALTY-logo.svg" />
-      </div>
-    </section>
+      </section>
+    </main>
     <include src="components/footer.html"></include>
     <script src="js/main.js" type="module"></script>
-  </main></body>
+  </body>
 </html>
